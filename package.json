@@ -27,7 +27,7 @@
     },
     "publish": {
       "provider": "github",
-      "owner": "adsclin",
+      "owner": "mycle-ahir",
       "repo": "adsclin"
     },
     "files": [
