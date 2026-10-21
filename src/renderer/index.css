@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#040807] text-[#e2f9ed] font-sans antialiased selection:bg-[#00ff88]/25 selection:text-[#00ff88];
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+}
+
+/* Custom cyber green scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #040807;
+}
+::-webkit-scrollbar-thumb {
+  background: #14382a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00ff88;
+  box-shadow: 0 0 8px rgba(0, 255, 136, 0.5);
+}
+
+/* Cyber toggle switch utility */
+.toggle-checkbox:checked {
+  right: 0;
+  border-color: #00ff88;
+}
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #00ff88;
+}
+
+/* Cyber grid background helper */
+.cyber-grid {
+  background-image: 
+    linear-gradient(to right, rgba(0, 255, 136, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 255, 136, 0.03) 1px, transparent 1px);
+  background-size: 36px 36px;
+}

@@ -1,0 +1,15 @@
+appId: com.profilebrowser.app
+productName: ProfileBrowser
+directories:
+  output: release
+files:
+  - dist/**/*
+  - package.json
+extraResources: []
+win:
+  target: nsis
+  icon: assets/icon.ico
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+asar: true
